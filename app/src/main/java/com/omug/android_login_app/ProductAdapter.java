@@ -7,15 +7,13 @@ import android.widget.BaseAdapter;
 import android.content.Context;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class ProductAdapter extends BaseAdapter {
-    private ArrayList <Product> products;
+    private List <Product> products;
     private LayoutInflater inflater;
 
-    public ProductAdapter(Context context, ArrayList<Product> prodList) {
+    public ProductAdapter(Context context, List<Product> prodList) {
         this.products = prodList;
         inflater=LayoutInflater.from(context);
     }

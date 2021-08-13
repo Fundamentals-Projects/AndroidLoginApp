@@ -7,7 +7,7 @@
     tools:context=".CartActivity">
 
     <ListView
-        android:id="@+id/lvShopping"
+        android:id="@+id/lvShoppingCart"
         android:layout_width="205dp"
         android:layout_height="464dp"
         android:layout_marginStart="17dp"
@@ -38,7 +38,7 @@
         android:layout_marginEnd="62dp"
         android:text="Remove"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lvShopping"
+        app:layout_constraintStart_toEndOf="@+id/lvShoppingCart"
         app:layout_constraintTop_toBottomOf="@+id/finalTotal" />
 
     <Button
@@ -52,7 +52,7 @@
         android:text="Place Order"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lvShopping"
+        app:layout_constraintStart_toEndOf="@+id/lvShoppingCart"
         app:layout_constraintTop_toBottomOf="@+id/btnRemove" />
 
     <Button
@@ -78,7 +78,7 @@
         android:textColor="@color/purple_700"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lvShopping"
+        app:layout_constraintStart_toEndOf="@+id/lvShoppingCart"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
@@ -86,36 +86,11 @@
         android:layout_width="51dp"
         android:layout_height="20dp"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="233dp"
         android:layout_marginEnd="111dp"
         android:text="Total:"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lvShopping"
-        app:layout_constraintTop_toBottomOf="@+id/finalQty" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="133dp"
-        android:layout_marginEnd="107dp"
-        android:text="Quantity:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lvShopping"
+        app:layout_constraintStart_toEndOf="@+id/lvShoppingCart"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/finalQty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="154dp"
-        android:text="0"
-        android:textColor="@color/purple_700"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lvShopping"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

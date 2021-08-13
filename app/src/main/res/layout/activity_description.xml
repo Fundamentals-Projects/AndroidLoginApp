@@ -39,45 +39,25 @@
         android:id="@+id/txtDescription"
         android:layout_width="378dp"
         android:layout_height="91dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="@+id/bigImgPrd"
-        app:layout_constraintStart_toStartOf="@+id/bigImgPrd"
-        app:layout_constraintTop_toBottomOf="@+id/bigImgPrd" />
+        app:layout_constraintEnd_toEndOf="@+id/textQtyAvailable"
+        app:layout_constraintStart_toStartOf="@+id/textQtyAvailable"
+        app:layout_constraintTop_toBottomOf="@+id/textQtyAvailable"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btnAddCar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="202dp"
         android:text="Add to Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtQty"
-        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
-
-    <EditText
-        android:id="@+id/txtQty"
-        android:layout_width="97dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="27dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="101dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="26dp"
-        android:text="Quantity:"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
 
     <Button
@@ -101,4 +81,60 @@
         android:text="Cart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLess"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="200dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="200dp"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddCar"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <TextView
+        android:id="@+id/txtQty"
+        android:layout_width="27dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="202dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMore"
+        app:layout_constraintStart_toEndOf="@+id/btnLess"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+
+    <TextView
+        android:id="@+id/textQtyAvailable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/bigImgPrd"
+        app:layout_constraintStart_toStartOf="@+id/bigImgPrd"
+        app:layout_constraintTop_toBottomOf="@+id/bigImgPrd" />
 </androidx.constraintlayout.widget.ConstraintLayout>
